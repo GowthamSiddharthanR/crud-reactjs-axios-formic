@@ -33,7 +33,7 @@ function EditUser() {
          * age : 20
          * }
          */
-        await axios.put(`https://crud-nodejs-bcrypt-token.onrender.com/${params.id}`, values,{
+        await axios.put(`https://crud-nodejs-bcrypt-token.onrender.com/user/${params.id}`, values,{
           headers : {
             Authorization : window.localStorage.getItem("mytoken")
           }
@@ -48,7 +48,7 @@ function EditUser() {
   let getData = async () => {
     try {
       const userResp = await axios.get(
-        `https://crud-nodejs-bcrypt-token.onrender.com/${params.id}`,{
+        `https://crud-nodejs-bcrypt-token.onrender.com/user/${params.id}`,{
           headers : {
             Authorization : window.localStorage.getItem("mytoken")
           }
