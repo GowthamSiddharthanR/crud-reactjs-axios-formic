@@ -29,7 +29,7 @@ function Register() {
     },
     onSubmit: async (values) => {
       try {
-        await axios.post("http://localhost:3000/register", values);
+        await axios.post("https://crud-nodejs-bcrypt-token.onrender.com/register", values);
         navigate("/");
       } catch (error) {
         console.log(error);

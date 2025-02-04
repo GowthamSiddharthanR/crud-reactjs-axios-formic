@@ -32,7 +32,7 @@ function UserCreate() {
          * }
          */
         await axios.post(
-          "http://localhost:3000/user",
+          "https://crud-nodejs-bcrypt-token.onrender.com/user",
           values,
           {
             headers: {

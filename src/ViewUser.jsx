@@ -8,7 +8,7 @@ function ViewUser() {
   let getData = async () => {
     try {
       const userResp = await axios.get(
-        `http://localhost:3000/user/${params.id}`,
+        `https://crud-nodejs-bcrypt-token.onrender.com/user/${params.id}`,
         {
           headers : {
             Authorization : window.localStorage.getItem("mytoken")
